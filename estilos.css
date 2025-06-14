@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #0717fa;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8em;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+nav ul.menu li:hover .submenu {
+  display: block;
+}
+
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #057df5;
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 10;
+}
+
+nav ul.submenu li a {
+  padding: 10px;
+}
+
+.banner {
+  background: url('https://via.placeholder.com/1200x300?text=Supermercado+El+Ahorro') no-repeat center;
+  background-size: cover;
+  color: rgb(26, 180, 12);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.productos, .formulario, .video {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.producto {
+  background: rgb(246, 248, 150);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 25%;
+  border-radius: 3px;
+}
+
+.producto h3 {
+  margin: 10px 0 2px;
+}
+
+.producto p {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.producto button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #1e8449;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #03283f;
+}
+
+footer {
+  background-color: #0b7ae9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supermercado El Ahorro</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🛒 El Ahorro</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#alimentos">Alimentos</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+        <li><a href="#limpieza">Limpieza</a></li>
+        <li><a href="#frutas">Frutas y Verduras</a></li>
+        <li><a href="#hogar">Hogar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner" id="inicio">
+    <h1>¡BIENVENIDOS A EL AHORRO!</h1>
+    <p>Tu supermercado favorito</p>
+  </section>
+
+  <section class="productos" id="alimentos">
+    <h2>Alimentos</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="img/arroz.jpg" alt="Arroz" />
+        <h3>Arroz</h3>
+        <p>$18.00</p>
+        <button onclick="agregarCarrito('leche', 22)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/leche.jpg" alt="Leche" />
+        <h3>Leche</h3>
+        <p>$22.00</p>
+        <button onclick="agregarCarrito('Leche', 22)">Agregar</button>
+      </div>
+    </div>
+    <div class="producto">
+      <img src="img/herdes.jpg" alt="herdes" />
+      <h3>herdes</h3>
+      <p>$25.00</p>
+      <button onclick="agregarCarrito('Leche', 25)">Agregar</button>
+    </div>
+    <div class="producto">
+      <img src="img/herdez frijoles.jpg" alt="herdez frijoles" />
+      <h3>frijoles</h3>
+      <p>$28.00</p>
+      <button onclick="agregarCarrito('frijoles', 28)">Agregar</button>
+    </div>
+    <div class="producto">
+      <img src="img/nesquik.jpg" alt="nesquik" />
+      <h3>nesquik</h3>
+      <p>$55.00</p>
+      <button onclick="agregarCarrito('nesquik', 22)">Agregar</button>
+    </div>
+    <div class="producto">
+      <img src="img/nutri rindes.jpg" alt="nutri rindes" />
+      <h3>nutri rindes</h3>
+      <p>$15.00</p>
+      <button onclick="agregarCarrito('nutri rindes', 15)">Agregar</button>
+    </div>
+  </section>
+
+  <section class="productos" id="bebidas">
+    <h2>Bebidas</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="img/jugo.jpg" alt="Jugo" />
+        <h3>Jugo</h3>
+        <p>$15.00</p>
+        <button onclick="agregarCarrito('Jugo', 15)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/jumex.webp" alt="jumex" />
+        <h3>jumex</h3>
+        <p>$22.00</p>
+        <button onclick="agregarCarrito('jumex', 22)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/miranda.webp" alt="miranda" />
+        <h3>miranda</h3>
+        <p>$25.00</p>
+        <button onclick="agregarCarrito('miranda', 25)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/pepsi.jpg" alt="pepsi" />
+        <h3>pepsi</h3>
+        <p>$17.00</p>
+        <button onclick="agregarCarrito('pepsi', 17)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/coca.webp" alt="coca" />
+        <h3>coca</h3>
+        <p>$23.00</p>
+        <button onclick="agregarCarrito('coca', 17)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/fresca.webp" alt="fresca" />
+        <h3>fresca</h3>
+        <p>$22.00</p>
+        <button onclick="agregarCarrito('fresca', 22)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/fanta de fresa.webp" alt="fanta" />
+        <h3>fanta</h3>
+        <p>$22.00</p>
+        <button onclick="agregarCarrito('fanta', 22)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/7up.webp" alt="7up" />
+        <h3>7up</h3>
+        <p>$30.00</p>
+        <button onclick="agregarCarrito('7up', 30)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/agua.webp" alt="agua" />
+        <h3>agua</h3>
+        <p>$15.00</p>
+        <button onclick="agregarCarrito('agua', 15)">Agregar</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="productos" id="limpieza">
+    <h2>Productos de Limpieza</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="img/detergente.jpg" alt="Detergente" />
+        <h3>Detergente</h3>
+        <p>$25.00</p>
+        <button onclick="agregarCarrito('Detergente', 25)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/1-2-3.jpg" alt="1-2-3" />
+        <h3>1-2-3</h3>
+        <p>$36.99</p>
+        <button onclick="agregarCarrito('1-2-3', 36.99)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/ace.webp" alt="ace" />
+        <h3>ace</h3>
+        <p>$40.00</p>
+        <button onclick="agregarCarrito('ace', 40)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/ariel.webp" alt="ariel" />
+        <h3>ariel</h3>
+        <p>$27.00</p>
+        <button onclick="agregarCarrito('ariel', 27)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/blod 3.webp" alt="blod" />
+        <h3>blod</h3>
+        <p>$54.00</p>
+        <button onclick="agregarCarrito('blod', 54)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/magistral.webp" alt="magistral" />
+        <h3>magistral</h3>
+        <p>$56.00</p>
+        <button onclick="agregarCarrito('magistral', 56)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/persil.webp" alt="persil" />
+        <h3>persil</h3>
+        <p>$34.00</p>
+        <button onclick="agregarCarrito('persil', 34)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/roma.jpg" alt="roma" />
+        <h3>roma</h3>
+        <p>$22.00</p>
+        <button onclick="agregarCarrito('roma', 22)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="productos" id="frutas">
+    <h2>Frutas y Verduras</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="img/manzana.jpg" alt="Manzana" />
+        <h3>Manzana</h3>
+        <p>$12.00</p>
+        <button onclick="agregarCarrito('Manzana', 12)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/durazno.webp" alt="durazno" />
+        <h3>durazno</h3>
+        <p>$15.00</p>
+        <button onclick="agregarCarrito('durazno', 15)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/fresas.webp" alt="fresas" />
+        <h3>fresas</h3>
+        <p>$30.00</p>
+        <button onclick="agregarCarrito('fresas', 30)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/guayaba.webp" alt="guayaba" />
+        <h3>guayaba</h3>
+        <p>$14.00</p>
+        <button onclick="agregarCarrito('guayaba', 14)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/kiwui.webp" alt="kiwui" />
+        <h3>kiwui</h3>
+        <p>$32.00</p>
+        <button onclick="agregarCarrito('kiwui', 32)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/mango.webp" alt="mango" />
+        <h3>mango</h3>
+        <p>$29.00</p>
+        <button onclick="agregarCarrito('mango', 29)">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="img/naramja.webp" alt="naramja" />
+        <h3>naramja</h3>
+        <p>$32.00</p>
+        <button onclick="agregarCarrito('naramja', 32)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/papaya.webp" alt="papaya" />
+        <h3>papaya</h3>
+        <p>$47.00</p>
+        <button onclick="agregarCarrito('papaya', 47)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/piña.webp" alt="piña" />
+        <h3>piña</h3>
+        <p>$28.00</p>
+        <button onclick="agregarCarrito('piña', 28)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/platano.jpg" alt="platano" />
+        <h3>platano</h3>
+        <p>$18.00</p>
+        <button onclick="agregarCarrito('platano', 18)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="productos" id="hogar">
+    <h2>Artículos para el Hogar</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="img/escoba.jpg" alt="Escoba" />
+        <h3>Escoba</h3>
+        <p>$30.00</p>
+        <button onclick="agregarCarrito('Escoba', 30)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/escobita.webp" alt="escobita" />
+        <h3>escobita</h3>
+        <p>$55.00</p>
+        <button onclick="agregarCarrito('escobita', 55)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/esponja.webp" alt="esponja" />
+        <h3>esponja</h3>
+        <p>$10.00</p>
+        <button onclick="agregarCarrito('esponja', 10)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/franela.webp" alt="franela" />
+        <h3>franela</h3>
+        <p>$18.00</p>
+        <button onclick="agregarCarrito('franela', 18)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="img/trapeador.webp" alt="trapeador" />
+        <h3>trapeador</h3>
+        <p>$66.00</p>
+        <button onclick="agregarCarrito('trapeador', 66)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <h2>Conócenos</h2>
+    <video width="50%" height="400" controls>
+      <source src=".//img/cortes vidios.mp4" type="Video/mp4" />
+    </video>
+  </section>
+
+  <section class="formulario" id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required />
+      <label>Correo:</label>
+      <input type="email" required />
+      <label>Motivo:</label>
+      <select>
+        <option>Consulta</option>
+        <option>Reclamo</option>
+      </select>
+      <p>Productos frecuentes:</p>
+      <label><input type="checkbox" /> Frutas</label>
+      <label><input type="checkbox" /> Limpieza</label>
+      <label><input type="checkbox" /> Bebidas</label>
+      <label>Mensaje:</label>
+      <textarea rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📍 Dirección 123 | 📞 55-0000-0000 | © 2025 El Ahorro</p>
+    <p>Total en carrito: $<span id="total">0</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
